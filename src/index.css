@@ -1,0 +1,101 @@
+:root {
+  --verde-claro: #d6f1ce;
+  --verde-medio: #329437;
+  --verde-escuro: #2e7d32;
+  --texto-claro: #f0f4f1;
+  --fundo-form: rgba(241, 248, 233, 0.256);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url('./image/image_jpg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: 'Segoe UI', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1000px;
+  background-color: var(--fundo-form);
+  border-radius: 10px;
+  margin: 0, auto;
+  padding: 30px;
+}
+
+h1 {
+  text-align: center;
+  color: var(--verde-escuro);
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin: 50px 0 10px;
+  font-weight: bold;
+  font-size: 18px;
+  color: var(--texto-claro);
+}
+
+input {
+  outline: none;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+button {
+  font-size: 20px;
+  padding: 15px;
+  margin-top: 30px;
+  background-color: var(--verde-medio);
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--verde-escuro);
+  opacity: 0.9;
+}
+
+/* 📱 Responsividade */
+@media (max-width: 600px) {
+  .container {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  label {
+    font-size: 16px;
+  }
+
+  input,
+  button {
+    font-size: 16px;
+  }
+}

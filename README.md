@@ -10,8 +10,8 @@ Aplicação web desenvolvida para registrar e conscientizar sobre o descarte cor
 - GitHub Pages
 
 ## 📸 Interface do Usuário
-![Tela de Registro](./src/image/imagem_ufms1.png)
-![Tela de Registro](./src/image/imagem_ufms2.png)
+![Tela de Registro](src/image/imagem_ufms1.png)
+![Tela de Registro](src/image/imagem_ufms2.png)
 
 
 

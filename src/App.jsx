@@ -23,7 +23,8 @@ function App() {
       <h1>Descarte Consciente</h1>
       <form onSubmit={handleSubmit}>
       
-
+        <label>Nome:</label>
+        <input type="text" name="nome" value={formData.nome} onChange={handleChange} required />
 
         <label>Tipo de resíduo:</label>
         <input type="text" name="tipo" value={formData.tipo} onChange={handleChange} required />

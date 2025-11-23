@@ -12,7 +12,9 @@ Aplicação web desenvolvida para registrar e conscientizar sobre o descarte cor
 ## 📸 Interface do Usuário
 ![Tela de Registro](src/image/imagem_ufms1.png)
 ![Tela de Registro](src/image/imagem_ufms2.png)
-
+![Tela de Registro](src/image/1.png)
+![Tela de Registro](src/image/2.png)
+![Tela de Registro](src/image/3.png)
 
 
 ## 🧠 Descrição Técnica do Projeto
@@ -78,3 +80,29 @@ git clone https://github.com/alinimaiak/eco_descarte.git
 cd eco_descarte
 npm install
 npm run dev
+
+
+## 📊 Módulo de Banco de Dados
+
+Como continuidade do projeto original, foi implementada a camada de **dados** utilizando SQL Server.  
+O objetivo foi estruturar e organizar as informações de resíduos eletrônicos e seus locais de descarte.
+
+### 🔹 O que foi feito
+- Criação do banco de dados **LixoEletronico**
+- Definição das tabelas:
+  - **TiposResiduos**: armazena os tipos de resíduos eletrônicos
+  - **LocaisDescarte**: armazena os locais disponíveis para descarte
+  - **Descarte**: registra cada descarte realizado, relacionando resíduo e local
+- Implementação de **restrições de integridade referencial** com chaves primárias e estrangeiras
+- Operações de manipulação de dados:
+  - Inserção de registros iniciais
+  - Atualização de dados
+  - Remoção respeitando dependências
+  - Consultas detalhadas para análise
+
+### 🔹 Resultado
+Agora o projeto conta com uma base sólida de dados, permitindo:
+- Registro estruturado de resíduos eletrônicos
+- Controle dos locais de descarte
+- Consultas para acompanhamento e análise
+
